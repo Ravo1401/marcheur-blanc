@@ -26,6 +26,7 @@ public class Trajet {
             if (steps > MAX_STEPS) {
                 throw new RuntimeException("Nombre maximum de pas atteint, possible boucle infinie.");
             }
+            System.out.println("marcheur: " + marcheur.getLieuActuel().getNom() + ", destination: " + destination.getNom());
             marcheur.marcher();
             lieux.add(marcheur.getLieuActuel());
             steps++;
